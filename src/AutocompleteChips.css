@@ -1,0 +1,102 @@
+.autocomplete-chips-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+  }
+   
+  .selected-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+   
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    position: relative;
+    height: 50px;
+  }
+   
+  .invisible-border {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 2px; 
+  }
+   
+  .autocomplete-chips-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: blue; 
+  }
+   
+  .autocomplete-list {
+    position: absolute;
+    top: calc(
+      100% + 5px
+    ); 
+    left: 0;
+
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1; 
+    max-height: 150px; 
+    overflow-y: auto; 
+  }
+   
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background-color: white; 
+    border-color: black;
+    padding: 5px 10px;
+    border-radius: 20px; 
+    border: 1px solid;
+    margin-right: 5px;
+  }
+   
+  .chip-icon {
+    margin-right: 5px;
+  }
+   
+  .chip-remove {
+    cursor: pointer;
+    margin-left: 5px;
+  }
+   
+  .chip.highlighted {
+    background-color: #ccc; 
+    border: 1px solid ; 
+  }
+
+
+  
+  .autocomplete-email{
+    margin-left: 30px;
+    color: grey;
+    font-size: small;
+  }
+  
+  .autocomplete-item{
+    height: 30px;
+
+  }
+
+  .autocomplete-list :hover{
+    background-color: #ccc;
+  }
+
+  /* Add this style to your CSS file */
+.icon-image {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Optional: Add margin for spacing */
+  }
+  
